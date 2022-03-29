@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kölsvinet | Boka bord</title>
+    <link rel="stylesheet" href="booking.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div ><a href="../index.html"><img class="logo" src="https://static.wixstatic.com/media/f044c0_fea4d2b35eb54e0396a18a45c564ecbb~mv2.png/v1/crop/x_0,y_0,w_1475,h_1479/fill/w_392,h_392,al_c,q_85,usm_0.66_1.00_0.01/K%C3%B6lsvinet%20logga_banor_NY.webp" alt="logo"></a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nothing" href="#"></a></li>
+                <li><a class="nav-btn" href="../#menu" >Meny</a></li>
+                <li><a class="nav-btn" href="../take-away/take-away.html">Take away</a></li>
+                <li><a class="nav-btn" href="../contact/contact.html">Kontakt</a></li>
+                <li><a class="book-link" href="../bookings/booking.html">Boka bord</a></li>
+            </ul>
+        </nav>
+        <div class="btn">
+            <button class="book-btn"><a class="book" href="../bookings/booking.html">Boka bord</a></button>
+        </div>
+        <div class="burger-case">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            </div>
+       </header>
+
+        <h2 id="table"></h2>
+
+       <section id="booking">
+           <div class="open">
+                    <h2 class="sub-title">Öppettider</h2>
+        <p class="subtext">
+         Fredag - Lördag 11:00-21:00 <br>
+         Söndag 11:00 - 16:00</p>
+           </div>
+
+           
+           <form id="booking-form">
+               <h2>Boka bord!</h2>
+               <label for="name">Namn</label>
+               <input type="text" id="name" placeholder="Name" required >
+               <label for="number">Telefon nummer</label>
+               <input type="text" id="number" placeholder="Telefon nummer" required>
+               <label for="amount">Sällskap</label>
+               <input type="number" id="amount" placeholder="Sällskap" required>
+               <label for="date">Datum</label>
+               <input type="date" id="date" required>
+               <label for="time">Tid</label>
+               <input type="time" id="time" placeholder="Tid" required>
+               <label for="message">Meddelande till restaurangen</label>
+               <textarea name="message" id="message" cols="30" rows="10" placeholder="Meddelande..." ></textarea>
+
+           </form>
+           <div class="button">
+              <button id="submit-btn" onclick="submitBooking()">Boka!</button> 
+           </div>
+           
+           <p class="confirm">Du kommer få en boknings bekräftelse när restaurangen har motagit din bokning!</p>
+       </section>
+
+    <footer>
+        <div class="socials">
+            <a href="../contact/contact.html"><span class="magnify"><img class="icons" src="images/assets/phone-call.png" alt=""></span></a>
+            <a href="https://www.instagram.com/kolsvinet_trosa/?hl=sv"><span class="magnify"><img class="icons" src="images/assets/instagram.png" alt=""></span></a>
+            <a href="https://www.facebook.com/kolsvinettrosa/"><span class="magnify"><img class="icons" src="images/assets/facebook.png" alt=""></span></a>
+            <a href="https://www.tripadvisor.se/Restaurant_Review-g2052399-d17566895-Reviews-Kolsvinet-Trosa_Sodermanland_County.html"><span class="magnify"><img class="icons" src="images/assets/tripadvisor-logotype.png" alt=""></span></a>
+            <a href="../contact/contact.html"><span class="magnify"><img class="icons" src="images/assets/email.png" alt=""></span></a>
+            <a href="https://www.google.com/maps/place/Trosa+G%C3%A4sthamn/@58.8908333,17.550589,17z/data=!3m1!4b1!4m5!3m4!1s0x465f47b9afedee47:0xb8edb70f44122c0e!8m2!3d58.8908333!4d17.5527777"><span class="magnify"><img class="icons" src="images/assets/gps.png" alt=""></span></a>
+        </div>
+        <div >
+            <p class="copy">All rights reserved Apelago AB</p>
+        </div>
+    </footer>
+</body>
+</html>
