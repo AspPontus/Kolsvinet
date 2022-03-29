@@ -100,11 +100,17 @@ body{
 /*navbar end*/
 
 .magnify{
+    display: inline-block;
     transition: all .1s ease-in;
+    padding: 1rem;
+
+    
 }
 
 .magnify:hover{
-    font-size: 120%;
+    display: inline-block;
+    transform: scale(1.2);
+    
 }
 
 .contact{
